@@ -30,6 +30,7 @@
       margin-right: 15px;
    }
    .header__menu ul {
+      /* primero la lista la ocultamos */
       display: none;
       list-style: none;
       padding: 0px;
@@ -39,6 +40,8 @@
       margin: 0px 0px 0px -14px;
    }
    .header__menu:hover ul, ul:hover{
+      /* cuando hagamos hover al header__menu "ul"(la lista) lo mostramos */
+      /* también lo mostramos cuando el estemos haciendo hover al "ul" */
       display: block;
    }
    .header__menu li {
@@ -84,6 +87,7 @@
       width: 70%;
       outline-style: none;
    }
+   /* para que el placeholder del input esté de color blanco */
    ::placeholder {
       color: white;
    }
