@@ -11,7 +11,7 @@
 <style>
    body {
       margin: 0px;
-      background-color: #AB88FF;
+      background-color: #8F57FD;
       font-family: 'Mulish', sans-serif;
    }
    .header {
@@ -64,8 +64,32 @@
       margin: 0px;
       color: white;
    }
+
+   .main {
+      height: 300px;
+   }
+   .main__title {
+      color: white;
+      font-size: 25px;
+   }
+   .input {
+      background-color: rgba(255,255,255,0.1);
+      border: 2px solid white;
+      border-radius: 30px;
+      color: white;
+      font-family: 'Mulish', sans-serif;
+      font-size: 16px;
+      height: 50px;
+      padding: 0px 20px;
+      width: 70%;
+      outline-style: none;
+   }
+   ::placeholder {
+      color: white;
+   }
 </style>
 <body>
+
    <header class="header">
       <img class="header__img" src="./../assets/logo-platzi-video.png" alt="Logo de Platzi Video">
       <div class="header__menu">
@@ -74,10 +98,16 @@
             <p>Perfil</p>
          </div>
          <ul>
-            <li><a href="/">Cuente</a></li>
-            <li><a href="/">Cerrar Sesión</a></li>
+            <li><a href="#">Cuenta</a></li>
+            <li><a href="#">Cerrar Sesión</a></li>
          </ul>
       </div>
    </header>
+
+   <section class="main">
+      <h2 class="main__title">¿Qué quieres ver hoy?</h2>
+      <input class="input" type="text" placeholder="Buscar...">
+   </section>
+
 </body>
 </html>
