@@ -80,10 +80,18 @@
       /* colocamos obsolute por que el padre "carousel-item" es position relative */
       /* con absolute ya podemos empezar a moverlos con top, left, right, bottom */
       position: absolute;
-      top: 0;
+      top: 1;
       left: 0;
       right: 0;
       bottom: 0;
+      color: white;
+   }
+   .carousel-item__details img {
+      width: 30px;
+   }
+   .carousel-item:hover .carousel-item__details {
+      /* cuando hagamos hover al item entonces sus detalles empiezan a aparecer */
+      opacity: 1;
    }
 </style>
 <body>
