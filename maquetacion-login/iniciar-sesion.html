@@ -22,16 +22,57 @@
       align-items: center;
    }
    .header__img {
-      margin-left: 30px;
+      margin: 20px 0px 0px 20px;
       width: 200px;
    }
 </style>
 <body>
+
    <header class="header">
       <img class="header__img" src="./assets/logo-platzi-video.png" alt="Logo de Platzi Video">
    </header>
-   <section>
+
+   <section class="login">
+
+      <section class="login__container">
+         <h2>Inicio Sesión</h2>
+
+         <form class="login__container--form" action="">
+            <input class="input" type="text" placeholder="Correo">
+            <input class="input" type="password" placeholder="Contraseña">
+            <button class="button">Iniciar Sesión</button>
+            <div class="login__container--remember-me">
+               <label>
+                  <input type="checkbox" id="cbox1" value="checkbos">Recuérdame
+               </label>
+               <a href="#">Olvidé mi contraseña</a>
+            </div>
+         </form>
+
+         <section class="login__container--social-media">
+            <div>
+               <img src="./assets/google-icon.jpg" alt="Logo de Google">
+               Inicia sesión con Google
+            </div>
+            <div>
+               <img src="./assets/Twitter_logo_white.png" alt="Logo de Twitter">
+               Inicia sesión con Twitter
+            </div>
+         </section>
+
+         <p class="login__container--register">
+            No tienes ninguna cuenta
+            <a href="#">Regístrate</a>
+         </p>
+      </section>
 
    </section>
+
+   <footer class="footer">
+      <a href="#">Términos de uso</a>
+      <a href="#">Declaración de privacidad</a>
+      <a href="#">Centro de ayuda</a>
+   </footer>
+   
 </body>
 </html>
