@@ -27,13 +27,15 @@
       margin-left: 10px;
    }
    .header__menu {
-      margin-right: 15px;
+      margin-right: 10px;
    }
    .header__menu ul {
       /* primero la lista la ocultamos */
       display: none;
       list-style: none;
       padding: 0px;
+      /* los ul se ubican en relación al elemento relativo más cercano */
+      /* aquí ya podríamos hacer uso de las propiedades top, bottom, left y right */
       position: absolute;
       width: 100px;
       text-align: right;

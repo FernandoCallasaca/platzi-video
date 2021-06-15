@@ -15,9 +15,10 @@
       /* overflow establece la propiedad de scroll */
       overflow: scroll;
       /* Este padding es para tener un margen en la vista */
-      /* o se cuando un item del container se haga grande */
+      /* cuando un item del container se haga grande */
       padding: 30px;
       /* position relative para que los elementos dentro de el se posicionen en relacion a este elemento */
+      /* también es relative para que este elemento se posicione en relación a su posición normal */
       position: relative;
    }
    .carousel__container {
@@ -33,12 +34,15 @@
       height: 250px;
       border-radius: 20px;
       /* para que la imagen se acople */
+      /* con este overflow(desboldamiento) hidden(oculto) = ocultamos el desbordamiento de las imágenes */
       overflow: hidden;
       margin-right: 10px;
-      /* inline-block solo respeta su width es por eso que pueden entrar otros elementos al costado */
+      /* inline-block respeta su width y height es por eso que pueden entrar otros elementos al costado */
+      /* podríamos usar inline pero este solo respeta la regla de izquierda a derecha sin respetar medidas */
       display: inline-block;
+      /* Con esto hacemos que el cursor aparezca como si fuera un botón*/
       cursor: pointer;
-      /* para que la transición esté más suave */
+      /* para que la transición esté más suave - se haga grande paulatinamente*/
       transition: 450ms all;
       /* para que no se salga(center) y para que empiece de izquierda a derecha(left) */
       transform-origin: center left;
@@ -57,7 +61,7 @@
    .carousel__container:hover .carousel-item:hover {
       /* cuando hagamos hover al container luego hagamos hover a un item(elemento específico) */
       /* este único item regresa su opacidad */
-      transform: scale(1.5);
+      transform: scale(1.5); /* scale transforma de acuerdo al tamaño scale(x) */
       opacity: 1;
    }
    .carousel-item__img {
